@@ -11,8 +11,10 @@ RUN apt-get install -y git
 
 RUN python3 --version
 
+RUN apt-get install -y python-yaml
+
 #RUN python3 -m pip install importlib-resources
-RUN python3 -m pip install PyYAML==6.0.1
+#RUN python3 -m pip install PyYAML==6.0.1
 
 COPY feed.py /usr/bin/feed.py
 
