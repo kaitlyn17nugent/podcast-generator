@@ -5,6 +5,8 @@ RUN apt-get update && apt-get install -y \
   python3-pip \
   git
 
+RUN update-alternatives --set python /usr/bin/python3.10
+
 RUN python3 -m pip install importlib-resources
 RUN python3 -m pip install PyYAML
 
